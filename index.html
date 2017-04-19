@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gas stations in Iceland</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="scripts/iceland.js"></script>
+    <script type="text/javascript" src="scripts/eartquakes.js"></script>
+    <script type="text/javascript" src="scripts/d3tip.js"></script>
+    <link rel="stylesheet" href="css/eartquakes.css">    
+    <link rel="stylesheet" href="css/styles.css">    
+    </head>
+
+<body>
+    <script type="text/javascript">
+        document.body.onload = function(){
+            loadGeoJSONData();
+        };
+        
+    </script>
+    <div>
+        <h1>Eartquakes in Iceland past 48 hours</h1>
+        <p>Data is fetched from www.apis.is</p>
+        <p>Hover over a dot to see more details. Scroll the mouse to zoom in and out</p>
+        <p>The size of a dot indicates the size of the earthquake and the color darkness indicates the depth of the earthquake</p>
+    </div>
+    <div id="map">
+    </div>
+</body>
+</html>
